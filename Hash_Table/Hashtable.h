@@ -110,7 +110,7 @@ public:
 
     void printByHash(int hashValue) const {
         if (hashValue < 0 || hashValue >= TABLE_SIZE) {
-            cout << "Invalid hash value" << endl;
+            cerr << "Invalid hash value" << endl;
             return;
         }
 
@@ -125,7 +125,7 @@ public:
         }
 
         if (!found) {
-            cout << "No elements found" << endl;
+            cerr << "No elements found" << endl;
         }
     }
 
